@@ -1,16 +1,12 @@
+#include <stdio.h>
 #include <unistd.h>
-
 /**
- *main - entry point of the program
+ *main - Entry point
  *
- *Return: Always 1 (error)
+ *Return: 1
  */
 int main(void)
 {
-	const char message[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	const int length = sizeof(message) - 1;
-	const int fd = 2;
-
-	write(fd, message, length);
+	fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
 	return (1);
 }
