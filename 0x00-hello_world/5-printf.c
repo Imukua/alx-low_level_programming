@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *Main: function nprinting
+ *main: function nprinting
  *
  *Return: always 0 (success)
  */
