@@ -1,13 +1,10 @@
 #include <stdio.h>
 
 /**
- *Strt function
- *
- *
- *
- *
- *print etc
- */
+ *  * main - Entry point
+ *   *
+ *    * Return: Always 0 (Success)
+ *     */
 
 int main() {
     puts("\"Programming is like building a multilingual puzzle");
