@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- *Main function : printing
+ *Main: function nprinting
  *
- *Return 0 : success
+ *Return: always 0 (success)
  */
 int main(void)
 {
