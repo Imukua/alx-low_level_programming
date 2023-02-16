@@ -2,7 +2,7 @@
 
 /**
  *main - Entry poin
- t
+ *
  *Return: Always 0 (Success)
  */
 int main(void)
