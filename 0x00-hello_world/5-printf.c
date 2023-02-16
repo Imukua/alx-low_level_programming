@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main: function nprinting
+ *main - Start point
  *
  *Return: always 0 (success)
  */
