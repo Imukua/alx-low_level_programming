@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  *Main: function nprinting
  *
