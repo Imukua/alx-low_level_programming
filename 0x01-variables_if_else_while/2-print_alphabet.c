@@ -6,10 +6,9 @@
  */
 int main(void)
 {
-	char X
-		;
-	X = 'a';
-	for(X <='z';X++)
+	char X;
+
+	for (X = 'a';X <= 'z';X++)
 	{
 		putchar(X);
 	}
