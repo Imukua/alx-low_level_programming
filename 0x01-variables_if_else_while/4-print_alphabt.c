@@ -8,7 +8,7 @@ int main(void)
 {
 	char X;
 	
-	for (X = 'a'; X <= 'z'; Z++)
+	for (X = 'a'; X <= 'z'; X++)
 	{
 		if (X != 'e' && X != 'q')
 			putchar(X);
@@ -16,4 +16,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-~                  
