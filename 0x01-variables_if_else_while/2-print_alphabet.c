@@ -6,8 +6,13 @@
  */
 int main(void)
 {
-	for (char x = 'a';X <= 'z';X++)
+	char X;
+	x = 'a'
+	for (X <= 'z')
+	{
 		putchar(X);
+		X++
+	}
 	putchar('\n')
 	return (0);
 }
