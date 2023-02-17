@@ -8,7 +8,7 @@ echo "#!/bin/bash" > $file_name
 
 vi $file_name
 
-chmod u+x $file_name
+#chmod u+x $file_name
 
 git add .
 
