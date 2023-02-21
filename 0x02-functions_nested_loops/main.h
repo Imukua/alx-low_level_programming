@@ -1,6 +1,6 @@
-#ifndef main.h
-#define main.h
+#ifndef main_h
+#define main_h
 
-int putchar(int c);
+int putchar(int c)
 
-#endif /* main.h */
+#endif /* main_h */
