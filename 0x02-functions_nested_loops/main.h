@@ -1,7 +1,6 @@
-#ifndef PUTCHAR_HEADER_H
-#define PUTCHAR_HEADER_H
+#ifndef main.h
+#define main.h
 
-int _putchar(int c)
+int putchar(int c);
 
-
-#endif
+#endif /* main.h */
