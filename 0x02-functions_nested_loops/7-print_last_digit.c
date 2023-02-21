@@ -6,6 +6,8 @@
  */
 int print_last_digit(int n)
 {
+	int a;
+
 	if (n < 0)
 	{
 		n = -n;
@@ -15,6 +17,7 @@ int print_last_digit(int n)
 	{
 		n = n;
 	}
-	putchar (n%10);
-	return (n%10);
+	a = n%10
+	putchar (a);
+	return (a;
 }
