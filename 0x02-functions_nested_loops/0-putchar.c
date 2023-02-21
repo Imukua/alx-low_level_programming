@@ -5,8 +5,8 @@
  * followed by a new line
  * Return: 0 (Success)
  */
-int main()
-{	
+int main(void)
+{
 	putchar('_');
 	putchar('p');
 	putchar('u');
