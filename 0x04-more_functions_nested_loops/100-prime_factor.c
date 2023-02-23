@@ -1,4 +1,4 @@
-nclude <stdio.h>
+#include <stdio.h>
 #include "holberton.h"
 /**
  * main - prints the biggest prime factor of a number.
