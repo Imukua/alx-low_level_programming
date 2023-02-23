@@ -1,4 +1,3 @@
-table file 34 lines (31 sloc) 478 Bytes
 #include "holberton.h"
 
 /**
