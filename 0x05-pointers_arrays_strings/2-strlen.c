@@ -5,6 +5,6 @@ int _strlen(char *s)
 	int counter;
 
 	for (i = 0; i <= *s; i++)
-		counter++
+		counter++;
 	return (counter);
 }
