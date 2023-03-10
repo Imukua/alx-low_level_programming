@@ -1,24 +1,32 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * _strstr - Entry point
- * @haystack: input
- * @needle: input
- * Return: Always 0 (Success)
- */
+* _strstr - function locate
+* @haystack: pointer to char
+* @needle: pointer to char
+* Return: 0
+*/
+
 char *_strstr(char *haystack, char *needle)
 {
-	for (; *haystack != '\0'; haystack++)
-	{
-		char *l = haystack;
-		char *p = needle;
+	char *result = haystack, *fneedle = needle;
 
-		while (*l == *p && *p != '\0')
+	while (*haystack)
+	{
+		while (*needle)
 		{
-			l++;
-			p++;
+			if (*haystack++ != *needle++)
+			{
+				break;
+			}
 		}
-		if (*p == '\0')
-			return (haystack);
+		if (!*needle)
+		{
+			return (result);
+		}
+		needle = fneedle;
+		result++;
+		haystack = result;
 	}
 	return (0);
 }
