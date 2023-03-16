@@ -8,39 +8,21 @@
  *
  * Return: pointer to the memory area s
  */
-
-char *_memset(char *s, char b, unsigned int n)
+int *array_range(int min, int max)
 {
-	unsigned int i;
+    int *arr;
+    int i, size;
 
-	for (i = 0; i < n; i++)
-	{
-		s[i] = b;
-	}
+    if (min > max)
+        return (NULL);
 
-	return (s);
-}
+    size = max - min + 1;
+    arr = malloc(size * sizeof(int));
+    if (arr == NULL)
+        return (NULL);
 
-/**
- * _calloc - allocates memory for an array
- * @nmemb: number of elements in the array
- * @size: size of each element
- *
- * Return: pointer to allocated memory
- */
-void *_calloc(unsigned int nmemb, unsigned int size)
-{
-	char *ptr;
+    for (i = 0; i < size; i++)
+        arr[i] = min++;
 
-	if (nmemb == 0 || size == 0)
-		return (NULL);
-
-	ptr = malloc(size * nmemb);
-
-	if (ptr == NULL)
-		return (NULL);
-
-	_memset(ptr, 0, nmemb * size);
-
-	return (ptr);
+    return (arr);
 }
