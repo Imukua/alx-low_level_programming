@@ -1,6 +1,6 @@
 #include "main.h"
-/*
- * binary_to_uint - Function to convert binary to unsigned int
+/**
+ * binary_to_uint - convert binary to unsigned int
  * @b: const char variable
  * Return: result returned
  */
