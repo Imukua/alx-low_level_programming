@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * main - Entry point function
  * @argc: number of command-line arguments
@@ -66,4 +68,3 @@ int main(int argc, char **argv)
 
     return (0);
 }
-
