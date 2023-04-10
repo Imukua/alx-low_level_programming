@@ -7,24 +7,24 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-    int o_file, w_file, count = 0;
+	int o_file, w_file, count = 0;
 
-    if (filename == NULL)
-        return (-1);
+	if (filename == NULL)
+	return (-1);
 
-    if (text_content != NULL)
-    {
-        for (count = 0; text_content[count];)
-            count++;
-    }
+	if (text_content != NULL)
+	{
+	for (count = 0; text_content[count];)
+	count++;
+	}
 
-    o_file = open(filename, O_WRONLY | O_APPEND);
-    w_file = write(o_file, text_content, count);
+	o_file = open(filename, O_WRONLY | O_APPEND);
+	w_file = write(o_file, text_content, count);
 
-    if (o_file == -1 || w_file == -1)
-        return (-1);
+	if (o_file == -1 || w_file == -1)
+	return (-1);
 
-    close(o_file);
+	close(o_file);
 
-    return (1);
+	return (1);
 }
