@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m 'more functions and nested loops'
+git commit -m 'Doubly linked'
 git push
