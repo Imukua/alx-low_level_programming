@@ -5,7 +5,7 @@
  * @size: The size of the array.
  *
  * Return: If error - NULL.
- *         else - pointer to new hash table.
+ *	else - pointer to new hash table.
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {

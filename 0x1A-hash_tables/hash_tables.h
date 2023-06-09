@@ -2,6 +2,8 @@
 #define HASH_TABLES_H
 
 #include <stdlib.h>
+#include <string.h>
+#include <stdlib.h>
 
 /**
  * struct hash_node_s - Node of a hash table
@@ -37,5 +39,11 @@ hash_table_t *hash_table_create(unsigned long int size);
 
 /* Hash function: djb2 algorithm */
 unsigned long int hash_djb2(const unsigned char *str);
+
+/* Function to get the index of a key */
+unsigned long int key_index(const unsigned char *key, unsigned long int size);
+
+/* Function to add an element to the hash table */
+int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 
 #endif /* HASH_TABLES_H */
