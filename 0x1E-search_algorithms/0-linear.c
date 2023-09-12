@@ -5,7 +5,7 @@
  * @array: arrays of intergers to be searched
  * @size: The size of the array to be searched
  * @value: The element we are looking for
- * 
+ *
  * Return: if value is not present in array or if array is NULL return -1
  * otherwise return first index of value if present.
  */
