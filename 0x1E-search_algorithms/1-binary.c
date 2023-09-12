@@ -5,7 +5,7 @@
  * @size: The number of elements in the array
  * @value: The element to be found in the array
  *
- * Return - -1 if the array is NULL or value is not found, otherwise return
+ * Return: -1 if the array is NULL or value is not found, otherwise return
  * index of found value
  */
 
