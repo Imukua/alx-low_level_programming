@@ -19,7 +19,7 @@ int _binary_search(int *array, int low, int high, int value)
 		{
 			printf("Searching in array: ");
 			for (mid = low; mid < high; mid++)
-				printf("%d", array[mid]);
+				printf("%d, ", array[mid]);
 			printf("%d\n", array[mid]);
 			mid = low + (high - low) / 2;
 			if (array[mid] == value)
@@ -47,16 +47,19 @@ int exponential_search(int *array, size_t size, int value)
 	int low = 0;
 
 	if (array == NULL)
-		retrun(-1);
+		return(-1);
 	if (array[0] != value)
 	{
-		for (low = 1; low < size && array[low] <= value; low *= 2)
+		for (low = 1; low < (int)size && array[low] <= value; low *= 2)
 		{
 			printf("Value checked array[%d] = [%d]\n", low, array[low]);
 		}
 	}
 
-	high = low < size ? low : size - 1;
+	if (low > (int)size - 1)
+		high = size - 1;
+	else
+		high = low; 
 	printf("Value found between indexes [%d] and [%d]\n", low / 2, high);
-	return (_binary_search(array, low, high, value));
+	return (_binary_search(array, low/2, high, value));
 }
