@@ -49,7 +49,7 @@ int advanced_binary_recursive(int *array, int low, int high, int value)
 	if (array[mid] == value && (mid == low || array[mid - 1] != value))
 		return (mid);
 	if (array[mid] >= value)
-		return (advanced_binary_recursive(array, low, mid - 1, value));
+		return (advanced_binary_recursive(array, low, mid, value));
 	else
 		return (advanced_binary_recursive(array, mid + 1, high, value));
 }
