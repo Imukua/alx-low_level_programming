@@ -46,4 +46,6 @@ int advanced_binary_recursive(int *array, int low, int high, int value)
 		else
 			return (advanced_binary_recursive(array, mid + 1, high, value));
 	}
+
+	return (-1);
 }
