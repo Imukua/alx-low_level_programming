@@ -56,7 +56,7 @@ int exponential_search(int *array, size_t size, int value)
 		}
 	}
 
-	if (low > (int)size)
+	if (low >= (int)size)
 		high = size - 1;
 	else
 		high = low;
